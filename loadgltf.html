@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加载gltf</title>
+
+    <link rel="stylesheet" type="text/css" href="css/loadgltf.css">
+    
+</head>
+<body>
+<p id="frame">帧数：检测中</p>
+
+<div class="inputModel" >
+   <div>
+     <label id="UploadLabel" for="model_uploads" >
+       选择要上传的模型( .obj,  .gltf,  .fbx)
+     </label>
+     <button class="button" id="clearList" >清空列表</button>
+     <button class="button" id="submit" >上传</button>
+     <input type="file" id="model_uploads" class="loading" accept=".obj, .gltf, .fbx" multiple>
+   </div>
+
+   <div class="preview">
+     <p class="result">当前列表没有文件</p>
+   </div>
+
+</div>
+
+
+
+
+  <canvas id="mainCanvas" >
+    <script src="./src/start_a_scene.js"></script>
+    <script src="./out/loadGLTF.js"></script>
+  </canvas>
+
+
+<div class="inputData">
+  <label id="uploadtxt" for="txt_uploads" >
+    请上传道路数据( .txt)
+  </label>
+  <input type="file" id="txt_uploads"  accept=".txt" >
+  <p class="list " id="txtName"> </p>
+</div>
+
+
+
+</body>
+</html>

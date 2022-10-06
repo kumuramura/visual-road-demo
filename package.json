@@ -1,0 +1,23 @@
+{
+  "name": "pointlearn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "loadingGLTF": "webpack --config config/loading.config.js",
+    "startScene": "webpack --config config/start.config.js"
+  },
+  "author": "fjw",
+  "license": "ISC",
+  "dependencies": {
+    "gltf-pipeline": "^3.0.4",
+    "obj2gltf": "^3.1.4",
+    "stats.js": "^0.17.0",
+    "three": "^0.135.0",
+    "webpack": "^5.65.0",
+    "webpage": "^0.3.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.1"
+  }
+}
